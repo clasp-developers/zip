@@ -48,3 +48,8 @@
                         :end (+ start (min n max)))))
     (incf (pos s) (- result start))
     result))
+
+(defmethod stream-element-type ((stream truncating-stream)) '(unsigned-byte 8))
+
+
+
